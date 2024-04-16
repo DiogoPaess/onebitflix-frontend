@@ -47,4 +47,5 @@ export const getStaticProps: GetStaticProps = async () => {
     revalidate: 3600 * 24,
   };
 };
+
 export default HomeNoAuth;

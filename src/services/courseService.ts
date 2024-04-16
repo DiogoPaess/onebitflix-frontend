@@ -1,12 +1,12 @@
 import api from "./api";
 
-export type EpsodesType = {
+export type EpisodeType = {
   id: number;
   name: string;
   synopsis: string;
   order: number;
   videoUrl: string;
-  secondesLong: number;
+  secondsLong: number;
 };
 
 export type CourseType = {
@@ -14,12 +14,12 @@ export type CourseType = {
   name: string;
   thumbnailUrl: string;
   synopsis: string;
-  episodes?: EpsodesType[];
+  episodes?: EpisodeType[];
 };
 
 const courseService = {
   getNewestCourses: async () => {
-    const res = await api.get("courses/newest").catch((error) => {
+    const res = await api.get("/courses/newest").catch((error) => {
       return error.response;
     });
 

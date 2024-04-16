@@ -10,8 +10,8 @@ const SlideCard = function ({ course }: props) {
     <>
       <div className={styles.slide}>
         <img
-          src={`process.env.NEXT_PUBLIC_BASEURL}/${course.thumbnailUrl}`}
-          alt=""
+          src={`${process.env.NEXT_PUBLIC_BASEURL}/${course.thumbnailUrl}`}
+          alt={course.name}
           className={styles.slideImg}
         />
         <p className={styles.slideTitle}>{course.name}</p>
