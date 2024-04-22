@@ -6,7 +6,7 @@ import { Container, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { FormEvent, useState } from "react";
 import authService from "../src/services/authService";
 import { useRouter } from "next/router";
-import ToastComponent from "@/src/components/common/toast";
+import ToastComponent from "../src/components/common/toast";
 
 const Register = function () {
   const router = useRouter();
@@ -17,7 +17,7 @@ const Register = function () {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
-    const fristName = formData.get("fristName")!.toString();
+    const firstName = formData.get("fristName")!.toString();
     const lastName = formData.get("lastName")!.toString();
     const phone = formData.get("phone")!.toString();
     const birth = formData.get("birth")!.toString();
@@ -25,7 +25,7 @@ const Register = function () {
     const password = formData.get("password")!.toString();
     const confirmPassword = formData.get("confirmPassword")!.toString();
     const params = {
-      fristName,
+      firstName,
       lastName,
       phone,
       birth,
