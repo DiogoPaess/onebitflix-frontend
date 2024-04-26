@@ -1,3 +1,4 @@
+import { register } from "module";
 import api from "./api";
 
 interface RegisterParams {
