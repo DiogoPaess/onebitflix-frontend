@@ -54,7 +54,7 @@ const PasswordForm = function () {
     if (res === 204) {
       setToastIsOpen(true);
       setErrorMessage("Senha alterada com sucesso!");
-      setColor("bg-sucess");
+      setColor("bg-success");
       setTimeout(() => {
         setToastIsOpen(false);
       }, 1000 * 3);
