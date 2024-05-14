@@ -11,6 +11,7 @@ const FeaturedCategory = function () {
   if (!data) {
     return <PageSpinner />;
   }
+
   return (
     <>
       <p className={styles.titleCategory}>EM DESTAQUE</p>

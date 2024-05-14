@@ -8,10 +8,11 @@ const NewestCategory = function () {
   const { data, error } = useSWR("/newest", courseService.getNewestCourses);
 
   if (error) return error;
-  if (!data)
-    if (!data) {
-      return <PageSpinner />;
-    }
+
+  if (!data) {
+    return <PageSpinner />;
+  }
+
   return (
     <>
       <p className={styles.titleCategory}>LANÇAMENTOS</p>
