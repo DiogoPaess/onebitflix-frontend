@@ -19,16 +19,15 @@ const PresentationSection = function () {
               Estude de onde estiver, a qualquer momento, e continue <br />
               evoluindo como programador.
             </p>
-            <Link href="/register">
-              <Button outline className={styles.btnCta}>
-                ACESSE AGORA
-                <img
-                  src="/buttonPlay.svg"
-                  alt="buttonImg"
-                  className={styles.btnImg}
-                />
-              </Button>
-            </Link>
+            <Link href="/register"> </Link>
+            <Button outline className={styles.btnCta}>
+              ACESSE AGORA
+              <img
+                src="/buttonPlay.svg"
+                alt="buttonImg"
+                className={styles.btnImg}
+              />
+            </Button>
           </Col>
           <Col md>
             <img
